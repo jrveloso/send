@@ -6,6 +6,7 @@ function createGradient(color1, color2) {
   return `linear-gradient(to bottom, ${color1}, ${color2})`;
 }
 
+//Think of like an object to access colors
 // SETUP COLORS
 const PRIMARY = {
   lighter: '#C8FACD',

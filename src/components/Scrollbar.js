@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+//Allows customizing scroll bar
 import SimpleBarReact from 'simplebar-react';
 // @mui
 import { alpha, styled } from '@mui/material/styles';
