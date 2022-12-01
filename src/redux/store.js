@@ -4,10 +4,11 @@ import {configureStore} from "@reduxjs/toolkit";
 import {useDispatch as useAppDispatch, useSelector as useAppSelector} from "react-redux";
 //Allows the data to persist if window is closed
 import {persistStore, persistReducer} from "redux-persist";
+import { rootPersistConfig, rootReducer } from "./rootReducer";
 
 //will contain information
 const store = configureStore({
-    reducer: persistReducer(),
+    reducer: persistReducer(rootPersistConfig, rootReducer),
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
         serializeableCheck: false,
         immutableCheck: false,
